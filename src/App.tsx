@@ -244,7 +244,6 @@ const App = () => {
       </AnimatedSection>
 
       {/* SEZIONE COMMUNITY GROWTH */}
-      {/* SEZIONE COMMUNITY GROWTH */}
 <AnimatedSection id="232323" className="relative py-24 overflow-hidden">
   <div className="absolute inset-0 z-0">
     <div className="absolute inset-0 gradient-bg2 opacity-60 z-10"></div>
