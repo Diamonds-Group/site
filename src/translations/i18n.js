@@ -17,9 +17,12 @@ const resources = {
         description:
           "Diamonds Group nasce come una Crypto Farm decentralizzata con l’obiettivo di favorire la creazione e la crescita di Utility Token ad alto potenziale, fornendo strutture economiche reali a individui e comunità. Sfruttiamo la blockchain di Solana per garantire trasparenza, sicurezza e transazioni rapide.",
         list: {
-          innovation: "Innovazione: Sviluppiamo soluzioni fresche e modelli sostenibili.",
-          decentralization: "Decentralizzazione: La community e la DAO guidano le decisioni chiave.",
-          transparency: "Trasparenza: Tutte le transazioni e i lanci di token sono verificabili on-chain.",
+          innovation:
+            "Innovazione: Sviluppiamo soluzioni Innovativi tramite modelli efficaci & sostenibili.",
+          decentralization:
+            "Decentralizzazione: La community e la DAO guidano le decisioni chiave.",
+          transparency:
+            "Trasparenza: Tutte le transazioni e i lanci di token sono verificabili on-chain.",
           inclusivity: "Inclusività: Aperto a tutti, esperti e neofiti.",
           sharedGrowth:
             "Crescita Condivisa: Più utenti = più adozione e vantaggi per l’intero ecosistema.",
@@ -159,7 +162,8 @@ const resources = {
               "È una community esclusiva di holder DMNS (minimo 50M di token) che offre accesso anticipato ad annunci importanti e un NFT personalizzato come badge.",
           },
           {
-            question: "Posso vendere i miei DMNS subito dopo l’acquisto su Raydium?",
+            question:
+              "Posso vendere i miei DMNS subito dopo l’acquisto su Raydium?",
             answer:
               "Sì, non ci sono restrizioni di vesting sugli acquisti diretti sul mercato aperto.",
           },
@@ -229,6 +233,82 @@ const resources = {
           "Nessun segnale di frode: Non sono stati rilevati precedenti truffe dal wallet del proprietario, garantendo la legittimità.",
         ],
       },
+
+      // ---- SEZIONE NUOVA PER IL TUTORIAL DETTAGLIATO D'ACQUISTO ----
+      purchaseDetailed: {
+        introText: "Segui questi passaggi dettagliati per acquistare DMNS:",
+        steps: {
+          step1: {
+            title: "1. Compra SOLANA da un CEX",
+            list: [
+              {
+                label: "Passo 1",
+                text: "Registrati su un exchange centralizzato affidabile (ad es. Binance, Coinbase, Kraken).",
+              },
+              {
+                label: "Passo 2",
+                text: "Completa il processo di verifica dell’account (KYC) se richiesto.",
+              },
+              {
+                label: "Passo 3",
+                text: "Deposita valuta fiat o criptovalute e acquista SOLANA.",
+              },
+            ],
+          },
+          step2: {
+            title: "2. Invia SOLANA dal CEX al wallet Phantom",
+            list: [
+              {
+                label: "Passo 1",
+                text: "Apri il tuo wallet Phantom e copia il tuo indirizzo pubblico.",
+              },
+              {
+                label: "Passo 2",
+                text: "Accedi al pannello di prelievo del CEX e incolla l'indirizzo Phantom come destinazione.",
+              },
+              {
+                label: "Passo 3",
+                text: "Controlla le commissioni di prelievo e conferma la transazione.",
+              },
+            ],
+          },
+          step3: {
+            title: "3. Swappa SOL in DMNS usando Phantom",
+            list: [
+              {
+                label: "Passo 1",
+                text: "Apri l’app Phantom e naviga nella sezione 'Swap' o 'Scambia'.",
+              },
+              {
+                label: "Passo 2",
+                text: "Seleziona SOL come valuta di partenza e DMNS come valuta di destinazione.",
+              },
+              {
+                label: "Passo 3",
+                text: "Inserisci l’importo da scambiare, verifica il tasso di cambio e conferma lo swap.",
+              },
+            ],
+          },
+          step4: {
+            title: "4. Benvenuto nella community!",
+            list: [
+              {
+                label: "Passo 1",
+                text: "Visita il nostro sito ufficiale e i canali social per rimanere aggiornato sulle novità.",
+              },
+              {
+                label: "Passo 2",
+                text: "Iscriviti al canale Telegram e segui il nostro profilo Twitter per partecipare agli eventi.",
+              },
+              {
+                label: "Passo 3",
+                text: "Partecipa attivamente alla community per scoprire vantaggi esclusivi e approfondimenti sul progetto.",
+              },
+            ],
+          },
+        },
+        raydiumButton: "Acquista DMNS su Raydium",
+      },
     },
   },
   en: {
@@ -243,32 +323,33 @@ const resources = {
       vision: {
         title: "Our Vision",
         description:
-          "Diamonds Group was born as a decentralized Crypto Farm with the aim of fostering the creation and growth of high-potential Utility Tokens, providing real economic structures to individuals and communities. We leverage the Solana blockchain to ensure transparency, security, and fast transactions.",
+          "Diamonds Group was born as a decentralized Crypto Farm with the goal of facilitating the creation and growth of high-potential Utility Tokens, providing real economic structures to individuals and communities. We leverage the Solana blockchain to ensure transparency, security, and fast transactions.",
         list: {
-          innovation: "Innovation: We develop fresh solutions and sustainable models.",
+          innovation:
+            "Innovation: We develop innovative solutions through effective & sustainable models.",
           decentralization:
-            "Decentralization: The community and the DAO drive key decisions.",
+            "Decentralization: The community and the DAO guide key decisions.",
           transparency:
             "Transparency: All transactions and token launches are verifiable on-chain.",
           inclusivity:
-            "Inclusivity: Open to everyone, experts and newcomers alike.",
+            "Inclusivity: Open to everyone, both experts and newcomers.",
           sharedGrowth:
             "Shared Growth: More users = more adoption and benefits for the entire ecosystem.",
         },
       },
       features: {
         primaryTitle: "Main Features",
-        extendedTitle: "More than a Crypto: An Ecosystem",
+        extendedTitle: "More Than a Crypto: An Ecosystem",
         primary: [
           {
             title: "DMNS: A Strategic Token",
             description:
-              "It functions as collateral for the entire ecosystem, aiming to boost trust and sustainability through diversification.",
+              "It acts as collateral for the entire ecosystem, aiming to increase trust and sustainability through diversification.",
           },
           {
             title: "Fair Launch",
             description:
-              "We launched DMNS fairly on SolSale, making the token accessible to everyone from the start.",
+              "We launched DMNS fairly on SolSale, making the token accessible to everyone from the very beginning.",
           },
           {
             title: "Diamonds Army",
@@ -285,12 +366,12 @@ const resources = {
           {
             title: "Global Expansion",
             description:
-              "We are active on multiple continents, with local partners promoting the spread of DMNS and its real adoption.",
+              "We are active on multiple continents, with local partners promoting DMNS’s spread and real adoption.",
           },
           {
             title: "Community Driven",
             description:
-              "The decision-making power lies in the hands of the holders: thanks to the DAO, every proposal is voted on transparently.",
+              "Decision-making power lies in the hands of holders: thanks to the DAO, every proposal is voted on transparently.",
           },
           {
             title: "Innovative dApp",
@@ -305,7 +386,7 @@ const resources = {
           {
             title: "Economic Potential",
             description:
-              "Through buyback, burn, and partnerships, DMNS aims to support and grow its value over time.",
+              "Through buybacks, burns, and partnerships, DMNS aims to support and increase its value over time.",
           },
         ],
       },
@@ -322,7 +403,7 @@ const resources = {
           },
         ],
         description:
-          "The Solana DeFi ecosystem boasts a robust and continuously expanding liquidity pool, offering unique opportunities for traders and investors. Moreover, its scalability allows DMNS to grow over time.",
+          "Solana's DeFi ecosystem boasts a robust and continuously expanding liquidity pool, offering unique opportunities for traders and investors. Furthermore, its scalability enables DMNS to grow over time.",
       },
       roadmap: {
         title: "Extended Roadmap",
@@ -331,19 +412,19 @@ const resources = {
             quarter: "Q1 (January – March)",
             holdersTarget: "5,000 HOLDERS",
             milestones: [
-              "Fair Launch on SolSale (completed 23/01/2024)",
+              "Fair Launch on SolSale (ended on 01/23/2024)",
               "Listings on ranking sites (CMC, CG, DexScreener, Dextools, GmGn)",
-              "Documentation Completion (GitBook)",
-              "Airdrop Announcement",
+              "Documentation completion (GitBook)",
+              "Airdrop announcement",
             ],
           },
           {
             quarter: "Q2 (April – June)",
             holdersTarget: "25,000 HOLDERS",
             milestones: [
-              "Social Commerce Platform Launch",
+              "Launch of Social Commerce platform",
               "Listing on Top 20 CEX",
-              "Airdrop Distribution",
+              "Airdrop distribution",
               "Global expansion and international promotion",
               "Development of DMNS Wallet (Staking & Farming)",
             ],
@@ -352,9 +433,9 @@ const resources = {
             quarter: "Q3 (July – September)",
             holdersTarget: "60,000 HOLDERS",
             milestones: [
-              "DAO Development: on-chain governance testing",
-              "Listing on CEX Top 10",
-              "DAO Beta testing",
+              "DAO development: on-chain governance testing",
+              "Listing on Top 10 CEX",
+              "DAO beta testing",
               "Social Network platform launch",
             ],
           },
@@ -362,8 +443,8 @@ const resources = {
             quarter: "Q4 (October – December)",
             holdersTarget: "100,000 HOLDERS",
             milestones: [
-              "Full DAO Launch",
-              "Launch of Diamonds DEX",
+              "Full DAO launch",
+              "Diamonds DEX launch",
               "NFT for Trainers and Certifications",
               "Consolidation of global partnerships",
               "International positioning",
@@ -374,18 +455,18 @@ const resources = {
       purchase: {
         title: "How to Purchase DMNS",
         intro:
-          "After the Fair Launch on SolSale (completed on January 23, 2024), DMNS is available on:",
-        list: ["Raydium (Solana AMM)", "Coming soon on Top 20 CEX"],
+          "After the Fair Launch on SolSale (ended on January 23, 2024), DMNS is available on:",
+        list: ["Raydium (Solana AMM)", "Coming Soon on Top 20 CEX"],
         instructions:
-          "To purchase on Raydium, create or connect a Solana wallet (Phantom, Solflare, Sollet), go to Raydium and select DMNS (Mint Address: 3cegQvfWj32SVViSRvYqeAxDxqqPAb4ud67EY75joMr5) if it does not appear automatically. Confirm the swap with SOL. The tokens will be visible in your wallet immediately.",
+          "To purchase on Raydium, create or connect a Solana wallet (Phantom, Solflare, Sollet), go to Raydium, and select DMNS (Mint Address: 3cegQvfWj32SVViSRvYqeAxDxqqPAb4ud67EY75joMr5) if it does not appear automatically. Confirm the swap with SOL. The tokens will appear in your wallet immediately.",
         note:
-          "There is no vesting for open market purchases. If you prefer to wait for the CEX listing, keep an eye on official announcements.",
+          "There is no vesting for open-market purchases. If you prefer to wait for a CEX listing, keep an eye on official announcements.",
       },
       faq: {
         title: "Frequently Asked Questions",
         items: [
           {
-            question: "What is the Diamonds Army?",
+            question: "What is Diamonds Army?",
             answer:
               "It is an exclusive community of DMNS holders (minimum 50M tokens) that offers early access to important announcements and a personalized NFT as a badge.",
           },
@@ -393,7 +474,7 @@ const resources = {
             question:
               "Can I sell my DMNS immediately after purchasing on Raydium?",
             answer:
-              "Yes, there are no vesting restrictions on direct open market purchases.",
+              "Yes, there are no vesting restrictions on direct open-market purchases.",
           },
           {
             question: "How does the Crypto Farm work?",
@@ -401,22 +482,21 @@ const resources = {
               "The concept is to generate value through new token issuances, partnerships, and decentralized investments, all governed by the DAO.",
           },
           {
-            question:
-              "What happens if my balance falls below 50M DMNS?",
+            question: "What happens if my balance falls below 50M DMNS?",
             answer:
-              "You might lose some Diamonds Army privileges and exclusive features associated with that threshold.",
+              "You might lose some Diamonds Army privileges and exclusive features tied to that threshold.",
           },
           {
             question: "Is DMNS a good investment?",
             answer:
-              "Cryptocurrencies are high-risk. Always do your own research and assess your risk tolerance. DMNS offers utility and potential benefits, but this is not financial advice.",
+              "Cryptocurrencies are high-risk. Always do your research and evaluate your risk tolerance. DMNS offers utility and potential advantages, but this is not financial advice.",
           },
         ],
       },
       community: {
-        title: "Our Community is Growing Rapidly",
+        title: "Our Community Is Growing Rapidly",
         description:
-          "It's time to act. Follow us, join our channels, and don't miss out on updates, events, and exclusive opportunities.",
+          "Now is the time to act. Follow us, join our channels, and don’t miss out on updates, events, and exclusive opportunities.",
         social: {
           x: "Follow us on X",
           telegram: "Join the Telegram Group",
@@ -426,7 +506,7 @@ const resources = {
       disclaimer: {
         title: "Disclaimer",
         text:
-          "The information provided does not constitute financial or legal advice. Cryptocurrencies are high-risk investments. Each user should assess their own risk tolerance and conduct thorough research (DYOR). Diamonds Group is not responsible for any financial losses resulting from participation in the project or token price fluctuations.",
+          "The information provided does not constitute financial or legal advice. Cryptocurrencies are high-risk investments. Each user should evaluate their own risk tolerance and conduct thorough research (DYOR). Diamonds Group is not responsible for any financial losses resulting from participation in the project or token price fluctuations.",
         channelsTitle: "Official Channels",
         channels: [
           { name: "Official Website", url: "https://diamonds-group.com/" },
@@ -441,25 +521,101 @@ const resources = {
       airdrop: {
         title: "Join the DMNS Airdrop!",
         description1:
-          "An <strong>airdrop</strong> is an initiative through which tokens are distributed for free to users, encouraging community growth and project dissemination.",
+          "An <strong>airdrop</strong> is an initiative through which tokens are distributed free of charge to users, encouraging community growth and project outreach.",
         description2:
-          "In this exclusive event, <strong>250 million DMNS tokens</strong> are up for grabs, to be divided among all participants!",
-        cta: "Join now!",
+          "In this exclusive event, <strong>250 million DMNS tokens</strong> are up for grabs, to be shared among all participants!",
+        cta: "Join Now!",
       },
       techSpecs: {
         title: "Technical Specifications",
         items: [
-          "Verified source code: The contract has been audited and validated, ensuring transparency and security.",
+          "Verified source code: The contract has been reviewed and validated, guaranteeing transparency and security.",
           "No minting risk: It is not possible to create new tokens, eliminating the risk of dilution.",
           "Full transferability: Users can transfer tokens at any time, without fees or limits.",
           "Immutable contract: The contract cannot be updated, ensuring stability and integrity.",
-          "No blacklist: Wallets cannot be blocked from transferring tokens, avoiding centralized controls.",
+          "No blacklist: Wallets cannot be blocked from transferring tokens, preventing centralized controls.",
           "Secure transfer functions: The router is hardcoded and there are no external calls, ensuring secure transfers.",
-          "Immutable metadata: The token's metadata is complete and unchangeable.",
-          "Recent activity: The contract shows recent interactions, demonstrating active and operational use.",
-          "Secure liquidity: Valid liquidity pairs and sufficient liquidity, without rugpull risks.",
+          "Immutable metadata: The token's metadata is complete and cannot be changed.",
+          "Recent activity: The contract shows recent interactions, demonstrating active and operational usage.",
+          "Secure liquidity: Valid liquidity pairs and sufficient liquidity, with no rugpull risks.",
           "No signs of fraud: No previous scams have been detected from the owner's wallet, ensuring legitimacy.",
         ],
+      },
+
+      // ---- NEW SECTION FOR DETAILED PURCHASE TUTORIAL ----
+      purchaseDetailed: {
+        introText: "Follow these detailed steps to purchase DMNS:",
+        steps: {
+          step1: {
+            title: "1. Buy SOLANA from a CEX",
+            list: [
+              {
+                label: "Step 1",
+                text: "Sign up for a reliable centralized exchange (e.g., Binance, Coinbase, Kraken).",
+              },
+              {
+                label: "Step 2",
+                text: "Complete the account verification process (KYC) if required.",
+              },
+              {
+                label: "Step 3",
+                text: "Deposit fiat currency or cryptocurrencies and purchase SOLANA.",
+              },
+            ],
+          },
+          step2: {
+            title: "2. Send SOLANA from the CEX to your Phantom wallet",
+            list: [
+              {
+                label: "Step 1",
+                text: "Open your Phantom wallet and copy your public address.",
+              },
+              {
+                label: "Step 2",
+                text: "Access the withdrawal panel on the CEX and paste the Phantom address as the destination.",
+              },
+              {
+                label: "Step 3",
+                text: "Check the withdrawal fees and confirm the transaction.",
+              },
+            ],
+          },
+          step3: {
+            title: "3. Swap SOL for DMNS using Phantom",
+            list: [
+              {
+                label: "Step 1",
+                text: "Open the Phantom app and go to the 'Swap' section.",
+              },
+              {
+                label: "Step 2",
+                text: "Select SOL as the currency you’re swapping from and DMNS as the currency you’re swapping to.",
+              },
+              {
+                label: "Step 3",
+                text: "Enter the amount to swap, verify the exchange rate, and confirm the swap.",
+              },
+            ],
+          },
+          step4: {
+            title: "4. Welcome to the community!",
+            list: [
+              {
+                label: "Step 1",
+                text: "Visit our official website and social channels to stay updated on the latest news.",
+              },
+              {
+                label: "Step 2",
+                text: "Join our Telegram channel and follow our Twitter profile to participate in events.",
+              },
+              {
+                label: "Step 3",
+                text: "Get actively involved in the community to discover exclusive benefits and project insights.",
+              },
+            ],
+          },
+        },
+        raydiumButton: "Purchase DMNS on Raydium",
       },
     },
   },
@@ -468,40 +624,40 @@ const resources = {
       hero: {
         welcome: "<span class='text-yellow-400'>Diamonds</span> Group",
         description:
-          "Bienvenidos a Diamonds Group, el ecosistema en la blockchain de Solana. El revolucionario Token <strong class='text-yellow-400'>DMNS</strong> es la llave para acceder a servicios exclusivos, formación gratuita y oportunidades económicas en una nueva economía descentralizada y transparente.",
+          "Bienvenidos a Diamonds Group, el ecosistema en la blockchain de Solana. El revolucionario <strong class='text-yellow-400'>DMNS</strong> Token es la clave para acceder a servicios exclusivos, formación gratuita y oportunidades económicas en una nueva economía descentralizada y transparente.",
         roadmapButton: "Descubre la Hoja de Ruta",
         purchaseButton: "Cómo Comprar",
       },
       vision: {
         title: "Nuestra Visión",
         description:
-          "Diamonds Group nace como una Crypto Farm descentralizada con el objetivo de favorecer la creación y crecimiento de Tokens de Utilidad de alto potencial, proporcionando estructuras económicas reales a individuos y comunidades. Aprovechamos la blockchain de Solana para garantizar transparencia, seguridad y transacciones rápidas.",
+          "Diamonds Group nace como una Crypto Farm descentralizada con el objetivo de favorecer la creación y el crecimiento de Tokens de Utilidad de alto potencial, brindando estructuras económicas reales a individuos y comunidades. Aprovechamos la blockchain de Solana para garantizar transparencia, seguridad y transacciones rápidas.",
         list: {
           innovation:
-            "Innovación: Desarrollamos soluciones frescas y modelos sostenibles.",
+            "Innovación: Desarrollamos soluciones innovadoras mediante modelos efectivos y sostenibles.",
           decentralization:
-            "Descentralización: La comunidad y la DAO impulsan las decisiones clave.",
+            "Descentralización: La comunidad y la DAO guían las decisiones clave.",
           transparency:
-            "Transparencia: Todas las transacciones y lanzamientos de tokens son verificables on-chain.",
+            "Transparencia: Todas las transacciones y lanzamientos de tokens son verificables en la cadena.",
           inclusivity:
-            "Inclusividad: Abierto a todos, tanto a expertos como a principiantes.",
+            "Inclusividad: Abierto a todos, tanto expertos como principiantes.",
           sharedGrowth:
             "Crecimiento Compartido: Más usuarios = mayor adopción y beneficios para todo el ecosistema.",
         },
       },
       features: {
         primaryTitle: "Características Principales",
-        extendedTitle: "Más que una Cripto: Un Ecosistema",
+        extendedTitle: "Más Que una Cripto: Un Ecosistema",
         primary: [
           {
             title: "DMNS: Un Token Estratégico",
             description:
-              "Funciona como activo colateral de todo el ecosistema, buscando incrementar la confianza y la sostenibilidad a través de la diversificación.",
+              "Funciona como activo colateral de todo el ecosistema, con el objetivo de aumentar la confianza y la sostenibilidad a través de la diversificación.",
           },
           {
-            title: "Lanzamiento Justo",
+            title: "Fair Launch",
             description:
-              "Lanzamos DMNS de manera equitativa en SolSale, haciendo el token accesible a todos desde el principio.",
+              "Lanzamos DMNS de manera equitativa en SolSale, haciendo que el token fuera accesible para todos desde el principio.",
           },
           {
             title: "Diamonds Army",
@@ -513,22 +669,22 @@ const resources = {
           {
             title: "Multi-Ecosistema",
             description:
-              "DMNS no es solo un token, sino un ecosistema completo en el que los nuevos proyectos se conectan y crean valor mutuo.",
+              "DMNS no es solo un token, sino todo un ecosistema donde nuevos proyectos se conectan y crean valor mutuo.",
           },
           {
             title: "Expansión Global",
             description:
-              "Estamos activos en varios continentes, con socios locales que promueven la difusión de DMNS y su adopción real.",
+              "Estamos activos en varios continentes, con socios locales que promueven la difusión y la adopción real de DMNS.",
           },
           {
             title: "Impulsado por la Comunidad",
             description:
-              "El poder de decisión está en manos de los poseedores: gracias a la DAO, cada propuesta se vota de forma transparente.",
+              "El poder de decisión está en manos de los holders: gracias a la DAO, cada propuesta se vota de forma transparente.",
           },
           {
-            title: "dApp Innovadora",
+            title: "dApp Innovadoras",
             description:
-              "Estamos desarrollando diversas dApps para ayudar a los usuarios a tomar decisiones informadas: Wallet, Comercio Social, Red Social, DAO.",
+              "Estamos desarrollando diversas dApps para ayudar a los usuarios a tomar decisiones informadas: Wallet, Social Commerce, Red Social, DAO.",
           },
           {
             title: "Tecnología Avanzada",
@@ -538,7 +694,7 @@ const resources = {
           {
             title: "Potencial Económico",
             description:
-              "A través de recompras, quema y asociaciones, DMNS busca sostener y hacer crecer su valor a lo largo del tiempo.",
+              "A través de recompras, quema y colaboraciones, DMNS busca sostener y aumentar su valor con el tiempo.",
           },
         ],
       },
@@ -547,8 +703,7 @@ const resources = {
         cards: [
           {
             title: "Velocidad",
-            description:
-              "Hasta 65,000 TPS con una finalización casi instantánea.",
+            description: "Hasta 65,000 TPS con finalidad casi instantánea.",
           },
           {
             title: "Costo",
@@ -556,7 +711,7 @@ const resources = {
           },
         ],
         description:
-          "El ecosistema DeFi de Solana cuenta con un pool de liquidez robusto y en constante expansión, ofreciendo oportunidades únicas para traders e inversores. Además, su escalabilidad permite que DMNS crezca con el tiempo.",
+          "El ecosistema DeFi de Solana cuenta con un pool de liquidez sólido y en constante expansión, ofreciendo oportunidades únicas para traders e inversores. Además, su escalabilidad permite que DMNS crezca con el tiempo.",
       },
       roadmap: {
         title: "Hoja de Ruta Extendida",
@@ -565,9 +720,9 @@ const resources = {
             quarter: "Q1 (Enero – Marzo)",
             holdersTarget: "5,000 HOLDERS",
             milestones: [
-              "Lanzamiento Justo en SolSale (finalizado 23/01/2024)",
+              "Lanzamiento Justo en SolSale (finalizado el 23/01/2024)",
               "Listados en sitios de ranking (CMC, CG, DexScreener, Dextools, GmGn)",
-              "Finalización de la Documentación (GitBook)",
+              "Finalización de la documentación (GitBook)",
               "Anuncio del Airdrop",
             ],
           },
@@ -575,9 +730,9 @@ const resources = {
             quarter: "Q2 (Abril – Junio)",
             holdersTarget: "25,000 HOLDERS",
             milestones: [
-              "Lanzamiento de la Plataforma de Comercio Social",
+              "Lanzamiento de la plataforma de Social Commerce",
               "Listado en CEX Top 20",
-              "Distribución de Airdrop",
+              "Distribución del Airdrop",
               "Expansión global y promoción internacional",
               "Desarrollo de la Billetera DMNS (Staking & Farming)",
             ],
@@ -586,9 +741,9 @@ const resources = {
             quarter: "Q3 (Julio – Septiembre)",
             holdersTarget: "60,000 HOLDERS",
             milestones: [
-              "Desarrollo de DAO: pruebas de gobernanza on-chain",
+              "Desarrollo de la DAO: pruebas de gobernanza on-chain",
               "Listado en CEX Top 10",
-              "Pruebas beta del DAO",
+              "Pruebas beta de la DAO",
               "Lanzamiento de la plataforma de Red Social",
             ],
           },
@@ -596,11 +751,11 @@ const resources = {
             quarter: "Q4 (Octubre – Diciembre)",
             holdersTarget: "100,000 HOLDERS",
             milestones: [
-              "Lanzamiento completo del DAO",
+              "Lanzamiento completo de la DAO",
               "Lanzamiento de Diamonds DEX",
-              "NFT para Formadores y Certificaciones",
-              "Consolidación de asociaciones globales",
-              "Posicionamiento Internacional",
+              "NFT para formadores y certificaciones",
+              "Consolidación de alianzas globales",
+              "Posicionamiento internacional",
             ],
           },
         ],
@@ -608,49 +763,48 @@ const resources = {
       purchase: {
         title: "Cómo Comprar DMNS",
         intro:
-          "Después del Lanzamiento Justo en SolSale (finalizado el 23 de enero de 2024), DMNS está disponible en:",
-        list: ["Raydium (AMM de Solana)", "Próximamente en Top 20 CEX"],
+          "Tras el Fair Launch en SolSale (finalizado el 23 de enero de 2024), DMNS está disponible en:",
+        list: ["Raydium (AMM de Solana)", "Próximamente en CEX Top 20"],
         instructions:
-          "Para comprar en Raydium, crea o conecta una billetera Solana (Phantom, Solflare, Sollet), ve a Raydium y selecciona DMNS (Mint Address: 3cegQvfWj32SVViSRvYqeAxDxqqPAb4ud67EY75joMr5) si no aparece automáticamente. Confirma el intercambio con SOL. Los tokens serán visibles de inmediato en tu billetera.",
+          "Para comprar en Raydium, crea o conecta una billetera de Solana (Phantom, Solflare, Sollet), ingresa a Raydium y selecciona DMNS (Dirección de Mint: 3cegQvfWj32SVViSRvYqeAxDxqqPAb4ud67EY75joMr5) si no aparece automáticamente. Confirma el intercambio con SOL. Los tokens aparecerán inmediatamente en tu billetera.",
         note:
-          "No hay ningún vesting para las compras en el mercado abierto. Si prefieres esperar a que se liste en un CEX, mantente atento a los anuncios oficiales.",
+          "No hay vesting para compras en el mercado abierto. Si prefieres esperar al listado en un CEX, mantente atento a los anuncios oficiales.",
       },
       faq: {
         title: "Preguntas Frecuentes",
         items: [
           {
-            question: "¿Qué es la Diamonds Army?",
+            question: "¿Qué es Diamonds Army?",
             answer:
-              "Es una comunidad exclusiva de holders de DMNS (mínimo 50M de tokens) que ofrece acceso anticipado a anuncios importantes y un NFT personalizado como distintivo.",
+              "Es una comunidad exclusiva de holders de DMNS (mínimo 50M de tokens) que ofrece acceso anticipado a anuncios importantes y un NFT personalizado como insignia.",
           },
           {
             question:
               "¿Puedo vender mis DMNS inmediatamente después de comprarlos en Raydium?",
             answer:
-              "Sí, no hay restricciones de vesting en las compras directas en el mercado abierto.",
+              "Sí, no hay restricciones de vesting en compras directas en el mercado abierto.",
           },
           {
             question: "¿Cómo funciona la Crypto Farm?",
             answer:
-              "El concepto consiste en generar valor mediante nuevas emisiones de tokens, asociaciones e inversiones descentralizadas, todo gobernado por la DAO.",
+              "El concepto consiste en generar valor mediante nuevas emisiones de tokens, colaboraciones e inversiones descentralizadas, todo gobernado por la DAO.",
           },
           {
-            question:
-              "¿Qué sucede si mi saldo cae por debajo de 50M de DMNS?",
+            question: "¿Qué sucede si mi saldo cae por debajo de 50M de DMNS?",
             answer:
-              "Podrías perder algunos privilegios de la Diamonds Army y las funciones exclusivas asociadas a ese umbral.",
+              "Podrías perder algunos privilegios de Diamonds Army y características exclusivas vinculadas a ese límite.",
           },
           {
             question: "¿Es DMNS una buena inversión?",
             answer:
-              "Las criptomonedas son de alto riesgo. Siempre haz tu propia investigación y evalúa tu tolerancia al riesgo. DMNS ofrece utilidad y beneficios potenciales, pero no es un consejo financiero.",
+              "Las criptomonedas son de alto riesgo. Siempre haz tu propia investigación y evalúa tu tolerancia al riesgo. DMNS ofrece utilidad y posibles ventajas, pero esto no es un consejo financiero.",
           },
         ],
       },
       community: {
         title: "Nuestra Comunidad Está Creciendo Rápidamente",
         description:
-          "Es hora de actuar. Síguenos, únete a nuestros canales y no te pierdas actualizaciones, eventos y oportunidades exclusivas.",
+          "Este es el momento de actuar. Síguenos, únete a nuestros canales y no te pierdas actualizaciones, eventos y oportunidades exclusivas.",
         social: {
           x: "Síguenos en X",
           telegram: "Únete al Grupo de Telegram",
@@ -660,7 +814,7 @@ const resources = {
       disclaimer: {
         title: "Descargo de responsabilidad",
         text:
-          "La información proporcionada no constituye asesoramiento financiero o legal. Las criptomonedas son inversiones de alto riesgo. Cada usuario debe evaluar su propia tolerancia al riesgo y realizar una investigación exhaustiva (DYOR). Diamonds Group no se hace responsable de las posibles pérdidas financieras derivadas de la participación en el proyecto o de las fluctuaciones en el precio del token.",
+          "La información proporcionada no constituye asesoramiento financiero ni legal. Las criptomonedas son inversiones de alto riesgo. Cada usuario debe evaluar su propia tolerancia al riesgo y realizar una investigación exhaustiva (DYOR). Diamonds Group no se hace responsable de las pérdidas financieras derivadas de la participación en el proyecto o de las fluctuaciones en el precio del token.",
         channelsTitle: "Canales Oficiales",
         channels: [
           { name: "Sitio Oficial", url: "https://diamonds-group.com/" },
@@ -675,9 +829,9 @@ const resources = {
       airdrop: {
         title: "¡Participa en el Airdrop de DMNS!",
         description1:
-          "Un <strong>airdrop</strong> es una iniciativa mediante la cual los tokens se distribuyen gratuitamente a los usuarios, incentivando el crecimiento de la comunidad y fomentando la difusión del proyecto.",
+          "Un <strong>airdrop</strong> es una iniciativa mediante la cual se distribuyen tokens de forma gratuita a los usuarios, fomentando el crecimiento de la comunidad y la difusión del proyecto.",
         description2:
-          "En este evento exclusivo, se repartirán <strong>250 millones de tokens DMNS</strong> entre todos los participantes!",
+          "En este evento exclusivo, se ofrecen <strong>250 millones de tokens DMNS</strong> para repartir entre todos los participantes.",
         cta: "¡Participa ahora!",
       },
       techSpecs: {
@@ -685,15 +839,91 @@ const resources = {
         items: [
           "Código fuente verificado: El contrato ha sido revisado y validado, garantizando transparencia y seguridad.",
           "Sin riesgo de minting: No es posible crear nuevos tokens, eliminando el riesgo de dilución.",
-          "Transferibilidad completa: Los usuarios pueden transferir tokens en cualquier momento, sin tarifas o límites.",
-          "Contrato inmutable: El contrato no puede ser actualizado, asegurando estabilidad e integridad.",
+          "Transferibilidad total: Los usuarios pueden transferir los tokens en cualquier momento, sin comisiones ni límites.",
+          "Contrato inmutable: El contrato no se puede actualizar, lo que garantiza estabilidad e integridad.",
           "Sin lista negra: Las billeteras no pueden ser bloqueadas para transferir tokens, evitando controles centralizados.",
-          "Funciones de transferencia seguras: El router está codificado de forma fija y no hay llamadas externas, garantizando transferencias seguras.",
-          "Metadatos inmutables: Los metadatos del token son completos e inalterables.",
+          "Funciones de transferencia seguras: El router está codificado de forma fija y no hay llamadas externas, asegurando transferencias seguras.",
+          "Metadatos inmutables: Los metadatos del token son completos y no pueden modificarse.",
           "Actividad reciente: El contrato muestra interacciones recientes, demostrando un uso activo y operativo.",
-          "Liquidez segura: Pares de liquidez válidos y suficiente liquidez, sin riesgos de rugpull.",
-          "Sin señales de fraude: No se han detectado antecedentes de estafas en la billetera del propietario, garantizando la legitimidad.",
+          "Liquidez segura: Pares de liquidez válidos y liquidez suficiente, sin riesgos de rugpull.",
+          "Sin señales de fraude: No se han detectado estafas previas en la billetera del propietario, garantizando la legitimidad.",
         ],
+      },
+
+      // ---- NUEVA SECCIÓN PARA EL TUTORIAL DETALLADO DE COMPRA ----
+      purchaseDetailed: {
+        introText: "Sigue estos pasos detallados para comprar DMNS:",
+        steps: {
+          step1: {
+            title: "1. Compra SOLANA en un CEX",
+            list: [
+              {
+                label: "Paso 1",
+                text: "Regístrate en un exchange centralizado confiable (p. ej., Binance, Coinbase, Kraken).",
+              },
+              {
+                label: "Paso 2",
+                text: "Completa el proceso de verificación de cuenta (KYC) si es necesario.",
+              },
+              {
+                label: "Paso 3",
+                text: "Deposita moneda fiduciaria o criptomonedas y adquiere SOLANA.",
+              },
+            ],
+          },
+          step2: {
+            title: "2. Envía SOLANA desde el CEX a tu wallet Phantom",
+            list: [
+              {
+                label: "Paso 1",
+                text: "Abre tu wallet Phantom y copia tu dirección pública.",
+              },
+              {
+                label: "Paso 2",
+                text: "Accede al panel de retiros del CEX y pega la dirección de Phantom como destino.",
+              },
+              {
+                label: "Paso 3",
+                text: "Verifica las comisiones de retiro y confirma la transacción.",
+              },
+            ],
+          },
+          step3: {
+            title: "3. Intercambia SOL por DMNS usando Phantom",
+            list: [
+              {
+                label: "Paso 1",
+                text: "Abre la aplicación Phantom y dirígete a la sección 'Swap' (Intercambio).",
+              },
+              {
+                label: "Paso 2",
+                text: "Selecciona SOL como la moneda de origen y DMNS como la moneda de destino.",
+              },
+              {
+                label: "Paso 3",
+                text: "Ingresa la cantidad a intercambiar, verifica el tipo de cambio y confirma la operación.",
+              },
+            ],
+          },
+          step4: {
+            title: "4. ¡Bienvenido a la comunidad!",
+            list: [
+              {
+                label: "Paso 1",
+                text: "Visita nuestro sitio web oficial y redes sociales para mantenerte al día de las novedades.",
+              },
+              {
+                label: "Paso 2",
+                text: "Únete a nuestro canal de Telegram y sigue nuestro perfil de Twitter para participar en eventos.",
+              },
+              {
+                label: "Paso 3",
+                text: "Participa activamente en la comunidad para descubrir beneficios exclusivos y conocer más sobre el proyecto.",
+              },
+            ],
+          },
+        },
+        raydiumButton: "Compra DMNS en Raydium",
       },
     },
   },
@@ -701,8 +931,8 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: navigator.language.split('-')[0],
-  fallbackLng: 'it',
+  lng: navigator.language.split('-')[0], // Rileva la lingua del browser
+  fallbackLng: 'it',                    // Lingua di fallback
   interpolation: {
     escapeValue: false,
   },

@@ -272,7 +272,7 @@ const App = () => {
           <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]" />
           <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8" />
           <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
-            Seguici su X
+            Twitter / X
           </span>
           <span className="absolute inset-0 border-2 border-white rounded-full" />
         </a>
@@ -287,7 +287,7 @@ const App = () => {
           <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]" />
           <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8" />
           <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
-            Unisciti al Gruppo Telegram
+            Telegram
           </span>
           <span className="absolute inset-0 border-2 border-white rounded-full" />
         </a>
@@ -300,87 +300,130 @@ const App = () => {
 </AnimatedSection>
 
 
-      {/* SEZIONE "COME ACQUISTARE" */}
-      <AnimatedSection className="container mx-auto px-4 py-24" id="purchase">
-        <div className="relative z-10 card-gradient p-8 rounded-xl">
-          <h2 className="text-4xl font-bold mb-12 text-yellow-400 text-center">
-            {t('purchase.title')}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            {/* Colonna sinistra: spiegazione esaustiva con menu a tendina */}
-            <div>
-              <p className="text-lg text-gray-200 mb-6">
-                Segui questi passaggi dettagliati per acquistare DMNS:
-              </p>
-              <div className="space-y-4">
-                {/* Fase 1: Compra SOLANA da un CEX */}
-                <details className="bg-black/30 p-4 rounded-lg">
-                  <summary className="cursor-pointer font-bold text-yellow-400">
-                    1. Compra SOLANA da un CEX
-                  </summary>
-                  <div className="mt-2 text-gray-200 space-y-2">
-                    <p><strong>Passo 1:</strong> Registrati su un exchange centralizzato affidabile (ad es. Binance, Coinbase, Kraken).</p>
-                    <p><strong>Passo 2:</strong> Completa il processo di verifica dell’account (KYC) se richiesto.</p>
-                    <p><strong>Passo 3:</strong> Deposita valuta fiat o criptovalute e acquista SOLANA.</p>
-                  </div>
-                </details>
-                {/* Fase 2: Invia SOLANA dal CEX al wallet Phantom */}
-                <details className="bg-black/30 p-4 rounded-lg">
-                  <summary className="cursor-pointer font-bold text-yellow-400">
-                    2. Invia SOLANA dal CEX al wallet Phantom
-                  </summary>
-                  <div className="mt-2 text-gray-200 space-y-2">
-                    <p><strong>Passo 1:</strong> Apri il tuo wallet Phantom e copia il tuo indirizzo pubblico.</p>
-                    <p><strong>Passo 2:</strong> Accedi al pannello di prelievo del CEX e incolla l'indirizzo Phantom come destinazione.</p>
-                    <p><strong>Passo 3:</strong> Controlla le commissioni di prelievo e conferma la transazione.</p>
-                  </div>
-                </details>
-                {/* Fase 3: Swappa SOL in DMNS usando Phantom */}
-                <details className="bg-black/30 p-4 rounded-lg">
-                  <summary className="cursor-pointer font-bold text-yellow-400">
-                    3. Swappa SOL in DMNS usando Phantom
-                  </summary>
-                  <div className="mt-2 text-gray-200 space-y-2">
-                    <p><strong>Passo 1:</strong> Apri l’app Phantom e naviga nella sezione "Swap" o "Scambia".</p>
-                    <p><strong>Passo 2:</strong> Seleziona SOL come valuta di partenza e DMNS come valuta di destinazione.</p>
-                    <p><strong>Passo 3:</strong> Inserisci l’importo da scambiare, verifica il tasso di cambio e conferma lo swap.</p>
-                  </div>
-                </details>
-                {/* Fase 4: Benvenuto nella community */}
-                <details className="bg-black/30 p-4 rounded-lg">
-                  <summary className="cursor-pointer font-bold text-yellow-400">
-                    4. Benvenuto nella community!
-                  </summary>
-                  <div className="mt-2 text-gray-200 space-y-2">
-                    <p><strong>Passo 1:</strong> Visita il nostro sito ufficiale e i canali social per rimanere aggiornato sulle novità.</p>
-                    <p><strong>Passo 2:</strong> Iscriviti al canale Telegram e segui il nostro profilo Twitter per partecipare agli eventi.</p>
-                    <p><strong>Passo 3:</strong> Partecipa attivamente alla community per scoprire vantaggi esclusivi e approfondimenti sul progetto.</p>
-                  </div>
-                </details>
-              </div>
+<AnimatedSection className="container mx-auto px-4 py-24" id="purchase">
+      <div className="relative z-10 card-gradient p-8 rounded-xl">
+        <h2 className="text-4xl font-bold mb-12 text-yellow-400 text-center">
+          {/* Titolo sezione tradotto */}
+          {t('purchase.title')}
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          {/* Colonna sinistra: spiegazione esaustiva con menu a tendina */}
+          <div>
+            {/* Testo introduttivo multilingua */}
+            <p className="text-lg text-gray-200 mb-6">
+              {t('purchaseDetailed.introText')}
+            </p>
+
+            <div className="space-y-4">
+              {/* Fase 1 */}
+              <details className="bg-black/30 p-4 rounded-lg">
+                <summary className="cursor-pointer font-bold text-yellow-400">
+                  {t('purchaseDetailed.steps.step1.title')}
+                </summary>
+                <div className="mt-2 text-gray-200 space-y-2">
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step1.list.0.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step1.list.0.text')}
+                  </p>
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step1.list.1.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step1.list.1.text')}
+                  </p>
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step1.list.2.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step1.list.2.text')}
+                  </p>
+                </div>
+              </details>
+
+              {/* Fase 2 */}
+              <details className="bg-black/30 p-4 rounded-lg">
+                <summary className="cursor-pointer font-bold text-yellow-400">
+                  {t('purchaseDetailed.steps.step2.title')}
+                </summary>
+                <div className="mt-2 text-gray-200 space-y-2">
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step2.list.0.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step2.list.0.text')}
+                  </p>
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step2.list.1.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step2.list.1.text')}
+                  </p>
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step2.list.2.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step2.list.2.text')}
+                  </p>
+                </div>
+              </details>
+
+              {/* Fase 3 */}
+              <details className="bg-black/30 p-4 rounded-lg">
+                <summary className="cursor-pointer font-bold text-yellow-400">
+                  {t('purchaseDetailed.steps.step3.title')}
+                </summary>
+                <div className="mt-2 text-gray-200 space-y-2">
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step3.list.0.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step3.list.0.text')}
+                  </p>
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step3.list.1.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step3.list.1.text')}
+                  </p>
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step3.list.2.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step3.list.2.text')}
+                  </p>
+                </div>
+              </details>
+
+              {/* Fase 4 */}
+              <details className="bg-black/30 p-4 rounded-lg">
+                <summary className="cursor-pointer font-bold text-yellow-400">
+                  {t('purchaseDetailed.steps.step4.title')}
+                </summary>
+                <div className="mt-2 text-gray-200 space-y-2">
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step4.list.0.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step4.list.0.text')}
+                  </p>
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step4.list.1.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step4.list.1.text')}
+                  </p>
+                  <p>
+                    <strong>{t('purchaseDetailed.steps.step4.list.2.label')}:</strong>{" "}
+                    {t('purchaseDetailed.steps.step4.list.2.text')}
+                  </p>
+                </div>
+              </details>
             </div>
-            {/* Colonna destra: collegamento wallet e acquisto diretto */}
-            <div>
-              <img 
-                src={RaydiumLogo} 
-                alt="Raydium Logo" 
-                className="w-full h-full object-cover" 
-              />
-              
-              <div className="text-center mt-4">
-                <a
-                  href="https://raydium.io/swap/?inputMint=3cegQvfWj32SVViSRvYqeAxDxqqPAb4ud67EY75joMr5&outputMint=sol"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
-                >
-                  Acquista DMNS su Raydium
-                </a>
-              </div>
+          </div>
+
+          {/* Colonna destra: collegamento wallet e acquisto diretto */}
+          <div>
+            <img 
+              src={RaydiumLogo} 
+              alt="Raydium Logo" 
+              className="w-full h-full object-cover" 
+            />
+            
+            <div className="text-center mt-4">
+              <a
+                href="https://raydium.io/swap/?inputMint=3cegQvfWj32SVViSRvYqeAxDxqqPAb4ud67EY75joMr5&outputMint=sol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded"
+              >
+                {t('purchaseDetailed.raydiumButton')}
+              </a>
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      </div>
+    </AnimatedSection>
 
       {/* SEZIONE AIRDROP */}
       <AirdropSection />
