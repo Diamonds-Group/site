@@ -5,6 +5,54 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   it: {
     translation: {
+      cookieBanner: {
+        initialTitle: "Teniamo alla tua privacy",
+        initialDescription:
+          "Utilizziamo cookie per migliorare la tua esperienza di navigazione, offrire annunci o contenuti personalizzati e analizzare il nostro traffico. Cliccando su \"Accetta tutto\", acconsenti all'uso dei cookie.",
+        customizeBtn: "Personalizza",
+        acceptAllBtn: "Accetta tutto",
+
+        secondTitle: "Personalizza le preferenze sui cookie",
+        secondDescription1:
+          "Troverai informazioni dettagliate su tutti i cookie nelle categorie di consenso qui sotto.",
+        secondDescription2:
+          "I cookie classificati come \"Necessari\" sono memorizzati sul tuo browser poiché sono essenziali per abilitare le funzionalità di base del sito.",
+        secondDescription3:
+          "Utilizziamo anche cookie di terze parti che ci aiutano ad analizzare come utilizzi questo sito, memorizzare le tue preferenze e fornire contenuti e annunci pubblicitari pertinenti. Questi cookie verranno memorizzati nel tuo browser solo con il tuo consenso.",
+        secondDescription4:
+          "Puoi scegliere di abilitare o disabilitare alcuni o tutti questi cookie, ma disabilitarne alcuni potrebbe influire sulla tua esperienza di navigazione.",
+        showLessBtn: "Mostra meno",
+
+        categories: {
+          necessary: {
+            title: "Necessari (Sempre Attivi)",
+            description:
+              "I cookie necessari sono richiesti per abilitare le funzionalità di base di questo sito, come fornire un accesso sicuro o regolare le tue preferenze di consenso. Questi cookie non memorizzano alcun dato personale identificabile.",
+          },
+          functional: {
+            title: "Funzionali",
+            description:
+              "I cookie funzionali aiutano a svolgere alcune funzionalità come condividere i contenuti del sito su piattaforme social, raccogliere feedback e altre funzionalità di terze parti.",
+          },
+          analytics: {
+            title: "Analitici",
+            description:
+              "I cookie analitici vengono utilizzati per capire come i visitatori interagiscono con il sito. Questi cookie aiutano a fornire informazioni su metriche come il numero di visitatori, la frequenza di rimbalzo, la fonte del traffico, ecc.",
+          },
+          performance: {
+            title: "Prestazioni",
+            description:
+              "I cookie di prestazione vengono utilizzati per comprendere e analizzare gli indici di prestazione chiave del sito, aiutando a fornire una migliore esperienza utente ai visitatori.",
+          },
+          advertisement: {
+            title: "Pubblicitari",
+            description:
+              "I cookie pubblicitari vengono utilizzati per fornire ai visitatori annunci personalizzati in base alle pagine che hai visitato in precedenza e per analizzare l'efficacia delle campagne pubblicitarie.",
+          },
+        },
+
+        savePreferencesBtn: "Salva le mie preferenze",
+      },
       hero: {
         welcome: "<span class='text-yellow-400'>Diamonds</span> Group",
         description:
@@ -313,6 +361,54 @@ const resources = {
   },
   en: {
     translation: {
+      cookieBanner: {
+        initialTitle: "We value your privacy",
+        initialDescription:
+          "We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+        customizeBtn: "Customize",
+        acceptAllBtn: "Accept All",
+
+        secondTitle: "Customize Consent Preferences",
+        secondDescription1:
+          "You will find detailed information about all cookies under each consent category below.",
+        secondDescription2:
+          'The cookies that are categorized as "Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site.',
+        secondDescription3:
+          "We also use third-party cookies that help us analyze how you use this website, store your preferences, and provide content and advertisements that are relevant to you. These cookies will only be stored in your browser with your consent.",
+        secondDescription4:
+          "You can choose to enable or disable some or all of these cookies but disabling some of them may affect your browsing experience.",
+        showLessBtn: "Show less",
+
+        categories: {
+          necessary: {
+            title: "Necessary (Always Active)",
+            description:
+              "Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personal identifiable data.",
+          },
+          functional: {
+            title: "Functional",
+            description:
+              "Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.",
+          },
+          analytics: {
+            title: "Analytics",
+            description:
+              "Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.",
+          },
+          performance: {
+            title: "Performance",
+            description:
+              "Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.",
+          },
+          advertisement: {
+            title: "Advertisement",
+            description:
+              "Advertisement cookies are used to provide visitors with customized advertisements based on the pages you visited previously and to analyze the effectiveness of the ad campaigns.",
+          },
+        },
+
+        savePreferencesBtn: "Save My Preferences",
+      },
       hero: {
         welcome: "<span class='text-yellow-400'>Diamonds</span> Group",
         description:
@@ -621,6 +717,54 @@ const resources = {
   },
   es: {
     translation: {
+      cookieBanner: {
+        initialTitle: "Valoramos tu privacidad",
+        initialDescription:
+          "Utilizamos cookies para mejorar tu experiencia de navegación, ofrecer anuncios o contenido personalizado y analizar nuestro tráfico. Al hacer clic en \"Aceptar todo\", aceptas nuestro uso de cookies.",
+        customizeBtn: "Personalizar",
+        acceptAllBtn: "Aceptar todo",
+
+        secondTitle: "Personalizar preferencias de consentimiento",
+        secondDescription1:
+          "Encontrarás información detallada sobre todas las cookies en cada categoría de consentimiento a continuación.",
+        secondDescription2:
+          'Las cookies que se clasifican como "Necesarias" se almacenan en tu navegador porque son esenciales para habilitar las funcionalidades básicas del sitio.',
+        secondDescription3:
+          "También utilizamos cookies de terceros que nos ayudan a analizar cómo usas este sitio, almacenar tus preferencias y proporcionar contenido y anuncios relevantes. Estas cookies solo se almacenarán en tu navegador con tu consentimiento.",
+        secondDescription4:
+          "Puedes optar por habilitar o deshabilitar algunas o todas estas cookies, pero deshabilitar algunas de ellas puede afectar tu experiencia de navegación.",
+        showLessBtn: "Mostrar menos",
+
+        categories: {
+          necessary: {
+            title: "Necesarias (Siempre Activas)",
+            description:
+              "Las cookies necesarias son requeridas para habilitar las funciones básicas de este sitio, como proporcionar inicio de sesión seguro o ajustar tus preferencias de consentimiento. Estas cookies no almacenan datos personales identificables.",
+          },
+          functional: {
+            title: "Funcionales",
+            description:
+              "Las cookies funcionales ayudan a realizar ciertas funcionalidades, como compartir el contenido del sitio en redes sociales, recopilar comentarios y otras funciones de terceros.",
+          },
+          analytics: {
+            title: "Analíticas",
+            description:
+              "Las cookies analíticas se utilizan para entender cómo los visitantes interactúan con el sitio. Estas cookies ayudan a proporcionar información sobre métricas como el número de visitantes, la tasa de rebote, la fuente de tráfico, etc.",
+          },
+          performance: {
+            title: "Rendimiento",
+            description:
+              "Las cookies de rendimiento se utilizan para comprender y analizar los índices de rendimiento clave del sitio, ayudando a brindar una mejor experiencia de usuario a los visitantes.",
+          },
+          advertisement: {
+            title: "Publicidad",
+            description:
+              "Las cookies publicitarias se utilizan para proporcionar a los visitantes anuncios personalizados basados en las páginas que has visitado anteriormente y para analizar la efectividad de las campañas publicitarias.",
+          },
+        },
+
+        savePreferencesBtn: "Guardar mis preferencias",
+      },
       hero: {
         welcome: "<span class='text-yellow-400'>Diamonds</span> Group",
         description:
