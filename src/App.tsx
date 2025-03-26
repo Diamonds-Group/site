@@ -466,12 +466,12 @@ const App = () => {
       <footer className="relative z-10 border-t border-gray-800 py-6">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400 text-sm mb-2">{t('footer.text')}</p>
-          <p className="text-gray-400 text-sm">
-            {t('footer.poweredBy')}{" "}
-            <a href="https://solana.com/" target="_blank" rel="noopener noreferrer" className="text-yellow-400 hover:underline hover-scale">
-              Solana
-            </a>
-          </p>
+          <div className="flex justify-center space-x-6 mb-6"> 
+          <a href="mailto:dmnstoken@gmail.com" className="text-yellow-400 hover:underline">
+            dmnstoken@gmail.com
+          </a>
+        </div>
+
         </div>
       </footer>
       <CookieBanner />
